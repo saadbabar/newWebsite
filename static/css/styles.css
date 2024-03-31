@@ -27,10 +27,18 @@ img {
   color: #010101;
   font-size: 12px;
   font-weight: inherit;
-  text-transform: uppercase;
-  margin-left: 74px;
+  /*text-transform: uppercase;*/
+  /*margin-left: 74px;*/
+  text-align: center;
   margin-top: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
 
+}
+
+.text:hover {
+  text-shadow: 0 0 30px rgba(0,255,255,1), 0 0 30px rgba(0,255,255,1);
 }
 .container {
   padding-top: 25px;

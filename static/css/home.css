@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
 *,
 *::before,
@@ -22,8 +22,63 @@ body {
   color: #010101;
   font-size: 12px;
   font-weight: inherit;
-  text-transform: uppercase;
-  margin-left: 74px;
+  text-align: center;
   margin-top: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
 }
+
+.container:hover {
+  text-shadow: 0 0 30px rgba(0,255,255,1), 0 0 30px rgba(0,255,255,1);
+}
+
+.boxes-container {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.box1, .box2 {
+  width: 48%;
+  border: 2px solid black;
+  padding: 20px 40px;
+  background-color: hsl(0, 0%, 10%);
+}
+
+.box1 {
+  margin-left: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: #0aa5ff;
+  color: #010101;
+  border-radius: 100px;
+  font-size: inherit;
+  font-weight: 600;
+  padding: 17px 26px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0, 0.25);
+  transition: box-shadow 0.35s ease-in-out; /* Increased duration and used ease-in-out for a smoother effect */
+}
+
+.contactBtn:hover {
+  box-shadow: 0 0 15px 5px rgba(10, 165, 255, 0.6); /* Adjust the color and size to achieve the desired glow effect */
+}
+
+.box2 {
+  margin-right: 10px;
+}
+
+
+
 
