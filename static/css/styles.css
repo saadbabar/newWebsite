@@ -13,7 +13,7 @@ body {
   height: 100vh;
   color: white;
   background-color: #e9e9f0;
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
 }
@@ -23,14 +23,25 @@ img {
   height: 100%;
   display: block;
 }
+.text {
+  color: #010101;
+  font-size: 12px;
+  font-weight: inherit;
+  text-transform: uppercase;
+  margin-left: 74px;
+  margin-top: 10px;
 
+}
 .container {
+  padding-top: 25px;
   width: 100%;
   width: 820px;
-  height: 340px;
+  height: 365px;
   display: flex;
   gap: 10px;
   margin-inline: 50px;
+  margin: 0 auto;
+  
 }
 
 .card {

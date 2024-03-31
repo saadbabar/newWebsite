@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    color: white;
+    background-color: #e9e9f0;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+  color: #010101;
+  font-size: 12px;
+  font-weight: inherit;
+  text-transform: uppercase;
+  margin-left: 74px;
+  margin-top: 10px;
+}
+
