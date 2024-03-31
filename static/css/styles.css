@@ -148,3 +148,17 @@ img {
   z-index: 0;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
 }
+
+@media (max-width: 700px) {
+  .container {
+    padding-top: 15px;
+    width: 90%;
+    height: 365px;
+    display: flex;
+    gap: 5px;
+    margin-inline: 50px;
+    margin: 0 auto;
+    
+  }
+
+}
