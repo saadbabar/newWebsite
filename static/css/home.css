@@ -46,6 +46,8 @@ body {
   border: 2px solid black;
   padding: 20px 40px;
   background-color: hsl(0, 0%, 10%);
+  border-radius: 30px; /* This line gives the cards their rounded edges */
+
 }
 
 .box1 {
