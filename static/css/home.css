@@ -61,6 +61,22 @@ body {
   gap: 20px;
 }
 
+.myphoto{
+  border-radius: 50%;
+  max-width: 30%;
+  max-height: 100%;
+  object-fit: cover; /*maintains aspect ratio*/
+  display:block;
+  margin: 0 auto;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
 .contactBtn {
   text-decoration: none;
   background-color: #0aa5ff;
@@ -80,6 +96,85 @@ body {
 .box2 {
   margin-right: 10px;
 }
+
+
+.aboutItem {
+  margin-top: 20px;
+}
+
+.IteminTech{
+  text-decoration: none;
+  background-color: #0aa5ff;
+  margin: 10px;
+
+  border-radius: 100px;
+  font-size: inherit;
+  font-weight: 600;
+  padding: 11px 22px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0, 0.25);
+
+  position: relative;
+  cursor: pointer;
+
+  overflow: hidden; /* Ensures the pseudo-element doesn't overflow the item */
+  transition: color 0.3s ease; /* Transition for text color change */
+
+}
+/* Hover effect */
+.IteminTech:hover {
+  background-image: linear-gradient(to right, #0aa5ff 50%, #FFF 50%); /* Half blue, half white */
+  background-size: 200% 100%; /* Double the background size */
+  background-position: right bottom; /* Shift the background */
+  transition: background-position 0.3s ease-in-out, color 0.3s ease; /* Transition for background and text color */
+}
+
+.IteminTech:hover {
+  color: #FFF; /* Change text color on hover for better contrast */
+}
+
+
+
+.ListofTechnologies .IteminTech p{
+  color: #010101;
+}
+
+.ListofTechnologies {
+  list-style-type: none; /* Removes the default list bullets */
+  padding: 0; /* Removes the default padding */
+  display: flex; /* Displays list items in a row */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line if there's not enough space */
+}
+
+@media (max-width: 700px) {
+  .boxes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1, .box2 {
+    width: 96%;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box1 content, .box2 content2 {
+    text-align: center;
+  }
+
+  .aboutItemText {
+    width: 100%; /* Ensures the container spans the entire width of its parent */
+    display: flex; /* Initiates Flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+  }
+
+  .ListofTechnologies {
+    justify-content: center; /* Centers the flex items horizontally */
+  }
+
+}
+
 
 
 

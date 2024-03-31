@@ -13,6 +13,7 @@
   font-family: "Ubuntu", sans-serif;
 }*/
 
+
 a {
   text-decoration: none;
 }
@@ -44,6 +45,10 @@ button {
   font-weight: 700;
   color: white;
   margin-left: 12px;
+}
+
+.content-wrap {
+  flex: 1;
 }
 
 .menu {
