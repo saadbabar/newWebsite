@@ -16,7 +16,13 @@ body {
     /*display: flex;*/
     justify-content: center;
     align-items: center;
+
+    /*background-image: url('../assets/10.jpeg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
 }
+
+
 
 .container{
   color: #010101;
@@ -102,6 +108,37 @@ body {
   margin-top: 20px;
 }
 
+.edu {
+  text-decoration: none;
+  background-color: #00274C;
+  margin: 10px;
+  color: #FFCB05;
+
+  border-radius: 100px;
+  font-size: inherit;
+  font-weight: 600;
+  padding: 11px 22px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0, 0.25);
+
+  position: relative;
+  cursor: pointer;
+
+  overflow: hidden; /* Ensures the pseudo-element doesn't overflow the item */
+  transition: color 0.3s ease; /* Transition for text color change */
+
+}
+
+.edu:hover {
+  background-image: linear-gradient(to right, #00274C 50%, #FFF 50%); /* Half blue, half white */
+  background-size: 200% 100%; /* Double the background size */
+  background-position: right bottom; /* Shift the background */
+  transition: background-position 0.3s ease-in-out, color 0.3s ease; /* Transition for background and text color */
+}
+
+.edu:hover {
+  color: #010101; /* Change text color on hover for better contrast */
+}
+
 .IteminTech{
   text-decoration: none;
   background-color: #0aa5ff;
@@ -132,7 +169,46 @@ body {
   color: #FFF; /* Change text color on hover for better contrast */
 }
 
+.IteminClass:hover {
+  background-image: linear-gradient(to right, #0aa5ff 50%, #FFF 50%); /* Half blue, half white */
+  background-size: 200% 100%; /* Double the background size */
+  background-position: right bottom; /* Shift the background */
+  transition: background-position 0.3s ease-in-out, color 0.3s ease; /* Transition for background and text color */
+}
 
+.IteminClass:hover {
+  color: #FFF; /* Change text color on hover for better contrast */
+}
+
+.IteminClass{
+  text-decoration: none;
+  background-color: #0aa5ff;
+  margin: 10px;
+
+  border-radius: 100px;
+  font-size: inherit;
+  font-weight: 600;
+  padding: 11px 22px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0, 0.25);
+
+  position: relative;
+  cursor: pointer;
+
+  overflow: hidden; /* Ensures the pseudo-element doesn't overflow the item */
+  transition: color 0.3s ease; /* Transition for text color change */
+
+}
+
+.ListofClasses .IteminClass p {
+  color: #010101;
+}
+
+.ListofClasses {
+  list-style-type: none; /* Removes the default list bullets */
+  padding: 0; /* Removes the default padding */
+  display: flex; /* Displays list items in a row */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line if there's not enough space */
+}
 
 .ListofTechnologies .IteminTech p{
   color: #010101;
