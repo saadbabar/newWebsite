@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     </head>
     <body>
         <title>Main</title>
@@ -20,7 +21,14 @@
                     <img class = "myphoto" src="./static/assets/mypic.jpg" alt="">
                     <h1 class = "title"> Hi, My Name is Saad</h1>
                     <p class = "description"> Here you will find some of my notable projects and some information about me. </p>
-                    <a href="mailto:saadmb@umich.edu" class="contactBtn"> Contact Me</a>
+                    <div class = "btns">
+                        <a href="mailto:saadmb@umich.edu" class="contactBtn"><i class = "fa fa-file-alt", aria-hidden="true"></i> Contact Me</a>
+                        <a href="https://www.linkedin.com/in/muhammadsaadbabar/" class="lnBtn"> <i class = "fab fa-linkedin"></i> LinkedIn </a>
+                        <a href="https://github.com/saadbabar" class="gbBtn"><i class = "fab fa-github"></i> Github</a>
+                    </div>
+                    
+
+
 
                     <ul class = "aboutItems">
                         <li class = "aboutItem">
@@ -110,6 +118,10 @@
                 <div class = "content2">
                     <h1 class = "title2"> Highlights</h1>
                     <p class = "description2"> Will replace with technical stuff. </p>
+                    <div class = "githubStats">
+                        <img src="https://raw.githubusercontent.com/saadbabar/github-stats/master/generated/languages.svg#gh-dark-mode-only" alt="GitHub Languages - Dark Mode" style="display: none;" onload="this.style.display='block'" class="gh-dark-mode-only">
+                        <img src="https://raw.githubusercontent.com/saadbabar/github-stats/master/generated/overview.svg#gh-dark-mode-only" alt="GitHub Languages - Dark Mode" style="display: none;" onload="this.style.display='block'" class="gh-dark-mode-only">
+                    </div>
                     <video class = "bball" width="540" height="400" controls>
                         <source src="./static/assets/IMG_1493.mp4" type="video/mp4">
                         Your browser does not support the video tag.
