@@ -13,6 +13,10 @@
   font-family: "Ubuntu", sans-serif;
 }*/
 
+body {
+  background-color: #222831;
+}
+
 
 a {
   text-decoration: none;
@@ -28,7 +32,7 @@ button {
 
 .navbar {
   height: 90px;
-  background-color: hsl(0, 0%, 10%);
+  background-color: #31363F;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -36,7 +40,7 @@ button {
 }
 
 .navbar .logo i {
-  color: #0aa5ff;
+  color: #76ABAE;
   font-size: 22px;
 }
 

@@ -11,8 +11,8 @@
 body {
     font-family: Inter, sans-serif;
     height: 100vh;
-    color: white;
-    background-color: #e9e9f0;
+    color: #EEEEEE;
+    background-color: #222831;
     /*display: flex;*/
     justify-content: center;
     align-items: center;
@@ -25,14 +25,16 @@ body {
 
 
 .container{
-  color: #010101;
+  color: #FFFFFF;
   font-size: 12px;
   font-weight: inherit;
   text-align: center;
   margin-top: 10px;
-  border: 2px solid black;
+  border: 2px solid #31363F;
+  background-color: #31363F;
   padding: 10px;
   margin: 10px;
+  border-radius: 30px;
 }
 
 .container:hover {
@@ -50,9 +52,9 @@ body {
 
 .box1, .box2 {
   width: 48%;
-  border: 2px solid black;
+  border: 2px solid #31363F;
   padding: 20px 40px;
-  background-color: hsl(0, 0%, 10%);
+  background-color: #31363F;
   border-radius: 30px; /* This line gives the cards their rounded edges */
 
 }
@@ -60,6 +62,7 @@ body {
 .box1 {
   margin-left: 10px;
 }
+
 
 .content {
   display: flex;
@@ -92,7 +95,7 @@ body {
 }
 .contactBtn {
   text-decoration: none;
-  background-color: #0aa5ff;
+  background-color: #76ABAE;
   margin-right: 12px; /*space between buttons*/
   color: #010101;
   border-radius: 100px;
@@ -201,7 +204,7 @@ body {
 
 .IteminTech{
   text-decoration: none;
-  background-color: #0aa5ff;
+  background-color: #76ABAE;
   margin: 10px;
 
   border-radius: 100px;
@@ -219,7 +222,7 @@ body {
 }
 /* Hover effect */
 .IteminTech:hover {
-  background-image: linear-gradient(to right, #0aa5ff 50%, #FFF 50%); /* Half blue, half white */
+  background-image: linear-gradient(to right, #76ABAE 50%, #FFF 50%); /* Half blue, half white */
   background-size: 200% 100%; /* Double the background size */
   background-position: right bottom; /* Shift the background */
   transition: background-position 0.3s ease-in-out, color 0.3s ease; /* Transition for background and text color */
@@ -230,7 +233,7 @@ body {
 }
 
 .IteminClass:hover {
-  background-image: linear-gradient(to right, #0aa5ff 50%, #FFF 50%); /* Half blue, half white */
+  background-image: linear-gradient(to right, #76ABAE 50%, #FFF 50%); /* Half blue, half white */
   background-size: 200% 100%; /* Double the background size */
   background-position: right bottom; /* Shift the background */
   transition: background-position 0.3s ease-in-out, color 0.3s ease; /* Transition for background and text color */
@@ -242,7 +245,7 @@ body {
 
 .IteminClass{
   text-decoration: none;
-  background-color: #0aa5ff;
+  background-color: #76ABAE;
   margin: 10px;
 
   border-radius: 100px;

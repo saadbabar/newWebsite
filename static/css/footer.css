@@ -6,12 +6,12 @@
 
 .footer  {
     margin-top: 25px;
-    background-color: #111
+    background-color: #31363F
 }
 
 .footerContainer {
     width: 100%;
-    padding: 70px 30px 20px;
+    padding: 50px 20px 20px;
 }
 
 .socialItems {
@@ -22,14 +22,14 @@
 .socialItems a {
     text-decoration: none;
     padding: 10px;
-    background-color: white;
+    background-color: #EEEEEE;
     margin: 10px;
     border-radius: 50%;
 }
 
 .socialItems a i {
     font-size: 2em;
-    color: black;
+    color: #222831;
     opacity: 0.9;
 }
 
