@@ -40,7 +40,7 @@ img {
 }
 
 .text:hover {
-  text-shadow: 0 0 30px rgba(0,255,255,1), 0 0 30px rgba(0,255,255,1);
+  text-shadow: 0 0 30px #76ABAE, 0 0 30px #76ABAE;
 }
 .container {
   padding-top: 25px;
@@ -121,13 +121,13 @@ img {
   overflow: hidden;
 }
 .card:hover .profile-image {
-  border: 1px solid rgb(110, 252, 205);
+  border: 1px solid #76ABAE;
 }
 .profile-image > svg {
   stroke: #fefefe;
 }
 .card:hover .profile-image > svg {
-  stroke: rgb(110, 252, 205);
+  stroke: #76ABAE;
 }
 
 .card-content > .title {
