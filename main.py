@@ -10,6 +10,10 @@ def about():
 def index():
     return render_template("index.html")
 
+@app.route('/experience')
+def xpr():
+    return render_template("xpr.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
