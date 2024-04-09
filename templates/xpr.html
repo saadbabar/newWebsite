@@ -5,11 +5,65 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Experiences</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/xpr.css')}}">
     </head>
 
     <body>
+        <div class = "timeline">
+            <div class = "container left-container">
+                <img src = "static/assets/amazon.png">
+                <div class = "textbox" data-exclusive-content = "Exclusive details">
+                    <h2>Company name</h2>
+                    <small>yr - yr</small>
+                    <span class = "left-container-arrow"></span>
+                </div>
+            </div>
 
+            <div class = "container right-container">
+                <img src = "static/assets/amazon.png">
+                <div class = "textbox" data-exclusive-content = "Exclusive details">
+                    <h2>Company name</h2>
+                    <small>yr - yr</small>
+                    <span class = "right-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class = "container left-container">
+                <img src = "static/assets/amazon.png">
+                <div class = "textbox" data-exclusive-content = "Exclusive details">
+                    <h2>Company name</h2>
+                    <small>yr - yr</small>
+                  
+                    <span class = "left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class = "container right-container">
+                <img src = "static/assets/amazon.png">
+                <div class = "textbox" data-exclusive-content = "Exclusive details">
+                    <h2>Company name</h2>
+                    <small>yr - yr</small>
+                  
+                    <span class = "right-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title">Company Name</h2>
+                <small id="modal-dates">yr - yr</small>
+                <p id="modal-description">Job Description</p>
+
+                <div id="modal-exclusive-content">
+                    <!-- You can put anything here, like an additional paragraph, images, links, etc. -->
+                    <h3>More Details</h3>
+                    <p>Here you can add more detailed information about the job, achievements, or any other relevant data that you only want to show in the pop-up.</p>
+                </div>
+            </div>
+        </div>
+        <script src = "static/script/xprclickevents.js"></script>
     </body>
 </div>
 {%endblock%}
