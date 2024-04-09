@@ -84,12 +84,61 @@ button {
   cursor: pointer;
 }
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+
 @media (max-width: 53rem) {
   .menu {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px; 
+    right: 0;
+    background-color: #31363F;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100; /* Ensure the menu is above other content */
+  }
+
+  .menu.active {
+    display: flex;
   }
 
   .menu-btn {
     display: block;
+  }
+
+  /* Ensure menu links fill the menu and are stacked vertically */
+  .menu-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-links a {
+    width: 100%; 
+    padding: 16px;
+    color: white; 
+  }
+
+  /* Styles for animating the menu button into a cross */
+  .menu-btn.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-btn.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
