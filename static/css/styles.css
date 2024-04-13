@@ -168,6 +168,39 @@ img {
   border-radius: 5px;
   margin: 10px;
   margin-top: 15px;
+  text-align: center;
+}
+
+.txt-box {
+  background-color: #76ABAE;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  
+}
+
+.project-ref {
+  background-color: #76ABAE;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 20%;
+  align-self: auto;
+  margin-right: 10px;
+}
+
+.project-ref p{
+  color: #010101;
+}
+
+.ref-container {
+  display: flex;
+  align-items: center;
+}
+
+.txt-box p {
+  color: black;
+  
 }
 
 @media (max-width: 700px) {

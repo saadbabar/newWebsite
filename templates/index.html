@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script type = "text/javascript" src="{{url_for('static', filename='script/script.js')}}">
 
     </script>
@@ -16,7 +17,7 @@
     </div>
     <div class="container">
       <div class="card" data-href="#project1-description">
-        <img class="background" src="./static/assets/01.webp" alt="">
+        <img class="background" src="./static/assets/portfolio.jpg" alt="">
 
         <div class="card-content">
           <div class="profile-image">
@@ -26,13 +27,13 @@
               </g>
             </svg>
           </div>
-          <h3 class="title">Project 1</h3>
+          <h3 class="title">Personal Portfolio v2</h3>
         </div>
         <div class="backdrop"></div>
       </div>
 
       <div class="card" data-href="#project2-description">
-        <img class="background" src="./static/assets/02.jpg" alt="">
+        <img class="background" src="./static/assets/bank.jpg" alt="">
         <div class="card-content">
           <div class="profile-image">
             <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 331.617" fill="#FFFFFF">
@@ -42,13 +43,13 @@
             </svg>
           </div>
 
-          <h3 class="title">Project 2</h3>
+          <h3 class="title">Wire Transfer Management Systerm</h3>
         </div>
         <div class="backdrop"></div>
       </div>
 
       <div class="card" data-href="#project3-description">
-        <img class="background" src="./static/assets/03.jpg" alt="">
+        <img class="background" src="./static/assets/MachineL.jpeg" alt="">
 
         <div class="card-content">
           <div class="profile-image">
@@ -59,13 +60,13 @@
             </svg>
           </div>
 
-          <h3 class="title">Project 3</h3>
+          <h3 class="title">ML Forum Post Classifier</h3>
         </div>
         <div class="backdrop"></div>
       </div>
 
       <div class="card" data-href="#project4-description">
-        <img class="background" src="./static/assets/04.jpg" alt="">
+        <img class="background" src="./static/assets/rockpaper.jpeg" alt="">
 
         <div class="card-content">
           <div class="profile-image">
@@ -76,7 +77,7 @@
             </svg>
           </div>
 
-          <h3 class="title">Project 4</h3>
+          <h3 class="title">Rock Paper Scissors</h3>
         </div>
         <div class="backdrop"></div>
       </div>
@@ -93,35 +94,58 @@
             </svg>
           </div>
 
-          <h3 class="title">Project 5</h3>
+          <h3 class="title">Self-Learning Chatbot</h3>
         </div>
         <div class="backdrop"></div>
       </div>
     </div>
     <div class = "descriptions-container">
       <div id="project1-description" class = "project-descriptions">
-        <h2>Project 1</h2>
-        <p>Description will go here</p>
+        <h2>Personal Portfolio v2</h2>
+        <div class = "txt-box">
+          <p>Designed and developed a website showcasing some of my personal projects. You are on it right now. Made use Javascript, HTML5/CSS3 to code front end design and functionality as well as standard file distribution practices (static, templates, etc). To deploy the website and handling app routes/server-side logic, I made use of Flask web framework. This project helped hone in skills relative to frontend web development and also gave me experience with git and version control.</p>
+        </div>
+        <div class = "ref-container">
+        <div class = "project-ref"> 
+          <a href="https://github.com/saadbabar/newWebsite"><i class = "fab fa-github"></i> Source Code </a>
+        </div>
+        <div class = "project-ref"> 
+          <a href="{{ url_for('about') }}">Demo</a>
+        </div>
+      </div>
       </div>
   
       <div id="project2-description" class = "project-descriptions">
-        <h2>Project 2</h2>
-        <p>Description will go here</p>
+        <h2>Wire Transfer Management System (Class Project)</h2>
+        <div class = "txt-box">
+          <p>This project is a C++ command-line program that parses through bank info in .txt format and uses the information to analyze excution dates, sender amounts, bank fees, etc. Made use of priority queues to execute transactions in order of dates provided. I also used Hash Tables so store custom user struct data such as user-name and sets within objects of the user struct to store IP Address information. With the data provided, I also created multiple queuries to analyze information for customers and the bank. This project helped better Data Structures knowledge as well as getting comfortable with the command line (input/output redirection and creating excutables) as well as using the debugger. I also created custom test cases to test edge cases.</p>
+        </div>
       </div>
   
       <div id="project3-description" class = "project-descriptions">
-        <h2>Project 3</h2>
-        <p>Description will go here</p>
+        <h2>ML Forum Post Classifer (Class Project)</h2>
+        <div class = "txt-box">
+          <p>This project is also a C++ command-line program that identifies subjects of posts from Piazza by applying natural language processing & machine learning techniques. Posts were categorized into relevant threads or subject-matter using binary search trees & recursion. Also developed Bayesian model to process textual data, enhancing platform functionality. This project helped hone in skills with working with a partner and data structures like trees and recursive techniques.</p>
+        </div>
       </div>
   
       <div id="project4-description" class = "project-descriptions">
-        <h2>Project 4</h2>
-        <p>Description will go here</p>
+        <h2>Rock Paper Scissors</h2>
+        <div class = "txt-box">
+          <p>This is an basic program i created in Python to get familiar with the syntax. Program takes in user input and puts up against a randomly generated computer instance of rock, paper or scissors. Also defined logic to quit and play again.</p>
+        </div>
+        <div class = "ref-container">
+        <div class = "project-ref"> 
+          <a href="https://github.com/saadbabar/RockPaperScissors"><i class = "fab fa-github"></i> Source Code </a>
+        </div>
+      </div>
       </div>
   
       <div id="project5-description" class = "project-descriptions">
-        <h2>Project 5</h2>
-        <p>Description will go here</p>
+        <h2>Self-Learning Chatbot</h2>
+        <div class = "txt-box">
+          <p>Created in Python, the program uses ML techniques to check if a question already in its local JSON database with a 0.8 similarity cutoff. If it doesn't then chatbot asks the answer and stores it. As more questions and answers are prompted by a user, chatbot develops more answers.</p>
+        </div>
       </div>
     </div>
     <script src = "static/script/clickevents.js"></script>
